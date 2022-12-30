@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="unit.css" />
+</head>
+
+<body>
+    <div id="headerout">
+        <div id="header">
+            <a href="#" class="logo">Unit-<span>Converter</span></a>
+        </div>
+    </div>
+    <div id="clear"></div>
+    <div id="contentout">
+        <div id="content">
+            <img src="calculator.png" width="80" height="80" align="right" border="0" onClick="quickCaclShow('');">
+            <h3>Unit Converter Express Version</h3>
+            <div id="calculator" style="display:none;"></div>
+            <div id="menu">
+                <ul>
+                    <li id="menuon"><a href="javascript:popMenu(&quot;Length&quot;);showSel(lA);">Length</a></li>
+                    <li><a href="javascript:popMenu(&quot;Temperature&quot;);showSel(tA);">Temperature</a></li>
+                    <li><a href="javascript:popMenu(&quot;Area&quot;);showSel(aA);">Area</a></li>
+                    <li><a href="javascript:popMenu(&quot;Volume&quot;);showSel(vA);">Volume</a></li>
+                    <li><a href="javascript:popMenu(&quot;Weight&quot;);showSel(wA);">Weight</a></li>
+                    <li><a href="javascript:popMenu(&quot;Time&quot;);showSel(mA);">Time</a></li>
+                </ul>
+            </div>
+            <script>
+                var isMobile = false;
+            </script>
+            <div id="main">
+                <table width="600" border="0" align="center" style="padding-top:5px; padding-left:20px; border-radius: 10px;">
+                    <form name="calForm" style="border-radius: 5px;">
+                        <tr>
+                            <td width="300"><b>From:</b></td>
+                            <td width="300"><b>To:</b></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="fromVal" id="fromVal" onKeyUp="calcul();" class="ucinput"
+                                    style="width:262px;" autofocus></td>
+                            <td><input type="text" name="toVal" style="width:262px;background-color:#eeeeee;"
+                                    class="ucinput" readonly></td>
+                        </tr>
+                        <tr>
+                            <td style="padding-top:8px;"><select name="calFrom" id="calFrom" onChange="calcul();"
+                                    size="11" class="ucselect" style="width:280px;"></select></td>
+                            <td style="padding-top:8px;"><select name="calTo" id="calTo" size="11" onChange="calcul();"
+                                    class="ucselect" style="width:280px;"></select></td>
+                        </tr>
+                    </form>
+                </table>
+                <br>
+                <div id="calResults"></div>
+            </div>
+        </div>
+    </div>
+    <div class="frame"><iframe src="calc.html" height="400px" width="45%" frameborder="no" style="border-radius: 10px;"></iframe></div>
+    <div id="para-content">
+        <br>
+        <p><b>Unit Conversion</b><br>
+            Unit conversion is a multi-step process that involves multiplication or division by a numerical factor.
+            There are different ways to measure weight, distance, and temperature. In several countries, distance is
+            measured in kilometers, weight in kilograms, and temperature in celsius. Let's say you're on vacation in
+            India, and you're told that the distance between the two cities is 100 kilometers. How much is that in
+            miles? This is where unit conversion comes into the picture.
+            <br><br>
+            <b>What is Unit Conversion?</b><br>
+            Unit conversion is a process with multiple steps that involves multiplication or division by a numerical
+            factor or, particularly a conversion factor. The process may also require selection of the correct
+            number of
+            significant digits, and rounding. Different units of conversion are used to measure different
+            parameters.
+            <br><br>
+        <ul>
+            <li>Measuring Length</li>
+            <li>Measuring Weight</li>
+            <li>Measuring Capacity</li>
+            <li>Measuring Temperature</li>
+        </ul><br><br>
+        In mathematics, we convert the units of measurement to understand better. For example, the length of a table
+        is
+        measured in inches whereas the length of a garden is measured in yards to make it simple to understand. We
+        cannot measure the length of a finger in miles. To measure different quantities, units of measurements are
+        required.
+
+        The conversion of units is required to solve various mathematical problems. For example, if the length of a
+        rectangle is given is inches whereas the breadth is given in feet, then to determine the perimeter of the
+        rectangle, we need to convert the units to make them uniform. Hence, it is necessary to learn the concept of
+        unit conversion.
+        <br><br>
+        <b>Definition of Conversion of Units</b><br>
+        By definition conversion of units means the conversion between different units and measurements of the same
+        quantity done by the process of multiplication or division. In maths, conversion is the process of changing
+        the
+        value of one form to another for example inches to millimeters, or liters to gallons. Units are used for
+        measuring length, measuring weight, measuring capacity, measuring temperature, and measuring speed.
+        <br><br>
+        <b>Conversion of Units Measurements</b><br>
+        Different units are used to measure different quantities. Let us explore the units used to measure the
+        following:
+        <br><br>
+        <ul>
+            <li>Length</li>
+            <li>Temperature</li>
+            <li>Area</li>
+            <li>Volume</li>
+            <li>Weight</li>
+            <li>Time</li>
+        </ul>
+        </p>
+
+        <script src="unit.js" async></script>
+    </div>
+
+</body>
+
+</html>
